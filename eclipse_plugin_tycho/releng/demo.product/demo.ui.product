@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Demo UI Application" uid="com.autron.odin.generator.ui.product" id="org.artop.demonstrator.product" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+
+   <launcher name="Demo UI Application">
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.platform" version="4.8.0.v20180611-0656"/>
+      <feature id="org.eclipse.rcp" version="4.8.0.v20180611-0656"/>
+      <feature id="org.eclipse.e4.rcp" version="1.6.100.v20180611-0422"/>
+      <feature id="org.eclipse.equinox.p2.user.ui" version="2.4.0.v20180515-1348"/>
+      <feature id="org.eclipse.equinox.p2.core.feature" version="1.5.0.v20180515-1348"/>
+      <feature id="org.eclipse.emf.ecore" version="2.14.0.v20180529-1144"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.feature" version="3.14.0.v20180301-0132"/>
+      <feature id="org.eclipse.help" version="2.2.200.v20180611-0500"/>
+      <feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature" version="1.1.100.v20180301-0132"/>
+      <feature id="org.eclipse.equinox.p2.extras.feature" version="1.4.0.v20180515-1348"/>
+      <feature id="org.eclipse.emf.common" version="2.14.0.v20180527-1134"/>
+      <feature id="org.eclipse.ecf.core.feature" version="1.5.0.v20180426-1936"/>
+      <feature id="org.eclipse.equinox.p2.rcp.feature" version="1.4.0.v20180515-1348"/>
+      <feature id="org.eclipse.ecf.filetransfer.feature" version="3.14.0.v20180306-0429"/>
+      <feature id="org.eclipse.ecf.core.ssl.feature" version="1.1.100.v20180301-0201"/>
+      <feature id="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.100.v20180301-0132"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
+
+</product>

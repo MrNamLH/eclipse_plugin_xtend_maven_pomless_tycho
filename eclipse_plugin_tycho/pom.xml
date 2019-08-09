@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>demo.root</artifactId>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>demo</groupId>
+		<artifactId>demo.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>./releng/demo.parent</relativePath>
+	</parent>
+
+	<modules>
+		<module>bundles</module>
+<!-- 		<module>features</module> -->
+		<module>releng</module>
+<!-- 		<module>tests</module> -->
+	</modules>
+
+	<properties>
+		<slf4j.version>1.7.26</slf4j.version>
+		<logback.version>1.2.3</logback.version>
+		<velocity.version>2.1</velocity.version>
+	</properties>
+
+	<dependencies>
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<!-- logback -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- apache velocity -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity-engine-core</artifactId>
+			<version>${velocity.version}</version>
+		</dependency>
+
+	</dependencies>
+</project>

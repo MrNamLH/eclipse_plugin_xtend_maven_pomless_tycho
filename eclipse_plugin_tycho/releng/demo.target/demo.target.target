@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?pde version="3.8"?><target includeMode="feature" name="demo.target" sequenceNumber="117">
+<locations>
+	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+		<unit id="org.eclipse.equinox.executable.feature.group" version="3.8.0.v20180518-2029"/>
+		<unit id="org.eclipse.pde.source.feature.group" version="3.13.100.v20180611-0826"/>
+		<unit id="org.eclipse.platform.feature.group" version="4.8.0.v20180611-0656"/>
+		<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.7.0.201806111355"/>
+		<unit id="org.eclipse.swtbot.feature.group" version="2.7.0.201806111355"/>
+		<unit id="org.eclipse.xtext.sdk.feature.group" version="2.14.0.v20180523-0937"/>
+		<repository location="http://download.eclipse.org/releases/photon/"/>
+	</location>
+	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+		<unit id="org.eclipse.sphinx.core.feature.group" version="0.11.0.201706140911"/>
+		<unit id="org.eclipse.sphinx.feature.group" version="0.11.0.201706140911"/>
+		<unit id="org.eclipse.sphinx.sdk.feature.group" version="0.11.0.201706140911"/>
+		<repository location="http://download.eclipse.org/sphinx/releases/0.11.x"/>
+	</location>
+	<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+		<unit id="org.artop.core.autosar447.sdk.feature.group" version="4.12.0.201904251603"/>
+		<unit id="org.artop.core.metamodel447.feature.group" version="4.12.0.201904251603"/>
+		<repository location="https://phuongpdv:Fpt.2019@www.artop.org/containers/artop-sdk-update-site-4.12/"/>
+		<unit id="org.artop.ecuc.accessors.feature.group" version="4.12.0.201904251603"/>
+	</location>
+</locations>
+<environment>
+<os>win32</os>
+<ws>win32</ws>
+<arch>x86_64</arch>
+<nl>en_US</nl>
+</environment>
+<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+</target>

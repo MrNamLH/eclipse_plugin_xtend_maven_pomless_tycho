@@ -1,0 +1,11 @@
+properties.0.name = org.eclipse.equinox.p2.provider
+properties.0.value = Demo UI
+
+##
+# Remove root files contributed by Eclipse RCP
+##
+instructions.configure=\
+    org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/readme/);\
+    org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/launcher.exe);\
+    org.eclipse.equinox.p2.touchpoint.natives.remove(path:${installFolder}/eclipsec.exe);
+
