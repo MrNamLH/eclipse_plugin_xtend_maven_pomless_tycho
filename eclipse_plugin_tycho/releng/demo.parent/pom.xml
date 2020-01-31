@@ -26,7 +26,7 @@
 		<!-- checkstyle_spotbugs -->
 		<spotbugs.skip>true</spotbugs.skip>
 		<checkstyle.skip>true</checkstyle.skip>
-		<checkstyle.version>8.8</checkstyle.version>
+		<checkstyle.version>8.29</checkstyle.version>
 		<spotbugs.version>4.0.0-beta3</spotbugs.version>
 
 	</properties>
